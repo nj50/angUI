@@ -1,0 +1,66 @@
+$base-color: #007aff;
+
+a:hover,a:active,a:link,a:visited{text-decoration:none;}
+
+.navbar{
+	border-bottom:1px solid $base-color;
+	margin:0;
+	border-radius:0;
+	a.logo{
+		display:inline-block;
+		margin:8px 0;
+	}
+	.headerLinks{
+	    width: calc(100% - 353px);
+		margin: 0 auto;
+		display: inline-block;
+		li{
+			margin:8px 0 0 0;
+			&+li{
+				margin-left:0px;
+			}
+		}
+		a{
+			border: 1px solid transparent;
+		    border-radius: 25px;
+		    padding: 5px 15px;
+		    display: inline-block;
+		}
+		.activeLink a{
+			border: 1px solid $base-color;
+		}
+	}
+	.userNameCircle{
+	   	border-radius: 50%;
+	    border: 2px solid $base-color;
+	    margin: 8px 0;
+	    width: 35px;
+	    height: 35px;
+	    line-height: 32px;
+	    text-align: center;
+	    display: inline-block;
+	}
+	.userDetails{
+		.tooltipcss .tooltiptext{
+			left:initial;
+			right:0;
+			width:none;
+			min-width:180px;
+			padding-left: 10px;
+			padding-right: 10px;
+			color:#fff;
+			border: 1px solid #007aff;
+			background-color: #007aff;
+			top:120%;
+			word-wrap: break-word;
+		}
+		.tooltipcss .tooltiptext::after{
+			left:initial;
+			right:8px;
+			border-color: transparent transparent #007aff transparent;
+		}
+	}
+	
+}
+
+

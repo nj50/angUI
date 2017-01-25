@@ -1,0 +1,27 @@
+node_modules/
+node/
+bower_components/
+.sass-cache/
+.idea/
+.tmp/
+dist/
+# ignore root level any app,assets,fonts,styles
+app/
+assets/
+fonts/
+styles/
+scripts/
+# not to ignore any app,assets,fonts,styles inside src
+!src/app/
+!src/assets/
+!src/fonts/
+!src/styles/
+/index.html
+.fuse*
+data/
+.DS_Store
+coverage/
+unitTestReport/
+eslintReport/
+
+

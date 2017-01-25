@@ -1,0 +1,19 @@
+<div class='container-fluid navbar'>
+    <div class="pull-left">
+        <a href="" class='logo'>
+            Logo
+        </a>
+    </div>
+    <ul class='list-inline headerLinks text-center'>
+        <li ng-repeat='list in vm.linksList' 
+            ng-class=" ( (list.LinkState | isState) || (list.LinkStateNext | isState) || (list.LinkStateApprovalHtml | isState)) ? vm.activeLink : ''"  
+            ng-click="vm.linkclicked(list.LinkState )">
+            <a href="">{{list.LinkTitle}}</a>
+        </li>
+    </ul>
+    <div class="pull-right userDetails">
+        <ul class="list-inline">
+            <li ng-if="vm.userType == 'manager' || vm.switchFlag "><a href="" ng-click="vm.switchView()" >Switch to {{vm.newRole_DisplayText}}</a></li>
+        </ul>
+    </div>
+</div>
